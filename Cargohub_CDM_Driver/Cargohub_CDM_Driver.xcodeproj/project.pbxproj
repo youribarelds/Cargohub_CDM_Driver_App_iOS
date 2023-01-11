@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D101A53429380D5D004A70F3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101A53329380D5D004A70F3 /* LoginView.swift */; };
+		D101A53629381F52004A70F3 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101A53529381F52004A70F3 /* Buttons.swift */; };
+		D101A53829382408004A70F3 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101A53729382408004A70F3 /* ForgotPasswordView.swift */; };
+		D10B1BFD296C4705005DB6AE /* AirwaybillStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B1BFC296C4705005DB6AE /* AirwaybillStore.swift */; };
+		D10B1C00296C474F005DB6AE /* Airwaybill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B1BFF296C474F005DB6AE /* Airwaybill.swift */; };
+		D10B1C02296C48B4005DB6AE /* AllAirwaybillsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B1C01296C48B4005DB6AE /* AllAirwaybillsResponse.swift */; };
+		D10B1C04296C78EE005DB6AE /* LoadAirwaybillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B1C03296C78EE005DB6AE /* LoadAirwaybillCell.swift */; };
+		D124DF542944C12A0083A037 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124DF532944C12A0083A037 /* Trip.swift */; };
+		D124DF562944C1520083A037 /* CargoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124DF552944C1520083A037 /* CargoAPI.swift */; };
+		D124DF5B2944C1B80083A037 /* AllTripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124DF5A2944C1B80083A037 /* AllTripsResponse.swift */; };
+		D124DF5E2944CBEC0083A037 /* TripStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124DF5D2944CBEC0083A037 /* TripStore.swift */; };
+		D143533E2937BEF50003BDFB /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = D143533D2937BEF50003BDFB /* SFSymbols */; };
+		D14353432937C5330003BDFB /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D14353402937C5330003BDFB /* Inter-Bold.otf */; };
+		D14353442937C5330003BDFB /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D14353412937C5330003BDFB /* Inter-SemiBold.otf */; };
+		D14353452937C5330003BDFB /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D14353422937C5330003BDFB /* Inter-Medium.otf */; };
+		D14353482937C5AB0003BDFB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14353472937C5AB0003BDFB /* FontStyles.swift */; };
+		D143534A2937DCB30003BDFB /* ActiveTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14353492937DCB30003BDFB /* ActiveTripsView.swift */; };
+		D143534C2937DCC10003BDFB /* ClosedTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143534B2937DCC10003BDFB /* ClosedTripView.swift */; };
+		D15D331729478BAA00467435 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D331629478BAA00467435 /* Helpers.swift */; };
+		D1639D00296F484600BAE14E /* DrivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1639CFF296F484600BAE14E /* DrivingView.swift */; };
+		D1639D02296F498C00BAE14E /* UnloadOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1639D01296F498C00BAE14E /* UnloadOrdersView.swift */; };
+		D1639D04296F4A2300BAE14E /* UnloadOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1639D03296F4A2300BAE14E /* UnloadOrderCell.swift */; };
+		D1639D06296F4A3700BAE14E /* UnloadAirwaybillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1639D05296F4A3700BAE14E /* UnloadAirwaybillCell.swift */; };
+		D18D6C6B2937AE4A00F1DDF2 /* Cargohub_CDM_DriverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D6C6A2937AE4A00F1DDF2 /* Cargohub_CDM_DriverApp.swift */; };
+		D18D6C6D2937AE4A00F1DDF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D6C6C2937AE4A00F1DDF2 /* ContentView.swift */; };
+		D18D6C6F2937AE4B00F1DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18D6C6E2937AE4B00F1DDF2 /* Assets.xcassets */; };
+		D18D6C722937AE4B00F1DDF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18D6C712937AE4B00F1DDF2 /* Preview Assets.xcassets */; };
+		D18D6C7C2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D6C7B2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.swift */; };
+		D18D6C862937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D6C852937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.swift */; };
+		D18D6C882937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D6C872937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITestsLaunchTests.swift */; };
+		D18D6C962937AECC00F1DDF2 /* PlannedTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D6C952937AECC00F1DDF2 /* PlannedTripsView.swift */; };
+		D1B487AD2940FC47002A549B /* TripDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B487AC2940FC46002A549B /* TripDetailsView.swift */; };
+		D1BCDE7A294A2C9A002DBAD3 /* LoadOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BCDE79294A2C9A002DBAD3 /* LoadOrdersView.swift */; };
+		D1BCDE7C294A2CDC002DBAD3 /* OrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BCDE7B294A2CDC002DBAD3 /* OrderStore.swift */; };
+		D1BCDE7E294A2CFF002DBAD3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BCDE7D294A2CFF002DBAD3 /* Order.swift */; };
+		D1BCDE80294A33C5002DBAD3 /* AllOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BCDE7F294A33C5002DBAD3 /* AllOrderResponse.swift */; };
+		D1BCDE83294A3710002DBAD3 /* LoadOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BCDE82294A3710002DBAD3 /* LoadOrderCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D18D6C782937AE4B00F1DDF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D18D6C5F2937AE4A00F1DDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D18D6C662937AE4A00F1DDF2;
+			remoteInfo = Cargohub_CDM_Driver;
+		};
+		D18D6C822937AE4B00F1DDF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D18D6C5F2937AE4A00F1DDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D18D6C662937AE4A00F1DDF2;
+			remoteInfo = Cargohub_CDM_Driver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D101A53329380D5D004A70F3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D101A53529381F52004A70F3 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		D101A53729382408004A70F3 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		D10B1BFC296C4705005DB6AE /* AirwaybillStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirwaybillStore.swift; sourceTree = "<group>"; };
+		D10B1BFF296C474F005DB6AE /* Airwaybill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airwaybill.swift; sourceTree = "<group>"; };
+		D10B1C01296C48B4005DB6AE /* AllAirwaybillsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAirwaybillsResponse.swift; sourceTree = "<group>"; };
+		D10B1C03296C78EE005DB6AE /* LoadAirwaybillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAirwaybillCell.swift; sourceTree = "<group>"; };
+		D124DF532944C12A0083A037 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		D124DF552944C1520083A037 /* CargoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoAPI.swift; sourceTree = "<group>"; };
+		D124DF5A2944C1B80083A037 /* AllTripsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTripsResponse.swift; sourceTree = "<group>"; };
+		D124DF5D2944CBEC0083A037 /* TripStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStore.swift; sourceTree = "<group>"; };
+		D14353402937C5330003BDFB /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		D14353412937C5330003BDFB /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		D14353422937C5330003BDFB /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		D14353462937C5620003BDFB /* Cargohub-CDM-Driver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Cargohub-CDM-Driver-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D14353472937C5AB0003BDFB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		D14353492937DCB30003BDFB /* ActiveTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTripsView.swift; sourceTree = "<group>"; };
+		D143534B2937DCC10003BDFB /* ClosedTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedTripView.swift; sourceTree = "<group>"; };
+		D15D331629478BAA00467435 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D1639CFF296F484600BAE14E /* DrivingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingView.swift; sourceTree = "<group>"; };
+		D1639D01296F498C00BAE14E /* UnloadOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloadOrdersView.swift; sourceTree = "<group>"; };
+		D1639D03296F4A2300BAE14E /* UnloadOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloadOrderCell.swift; sourceTree = "<group>"; };
+		D1639D05296F4A3700BAE14E /* UnloadAirwaybillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloadAirwaybillCell.swift; sourceTree = "<group>"; };
+		D18D6C672937AE4A00F1DDF2 /* Cargohub_CDM_Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cargohub_CDM_Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18D6C6A2937AE4A00F1DDF2 /* Cargohub_CDM_DriverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cargohub_CDM_DriverApp.swift; sourceTree = "<group>"; };
+		D18D6C6C2937AE4A00F1DDF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D18D6C6E2937AE4B00F1DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D18D6C712937AE4B00F1DDF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D18D6C772937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cargohub_CDM_DriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18D6C7B2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cargohub_CDM_DriverTests.swift; sourceTree = "<group>"; };
+		D18D6C812937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cargohub_CDM_DriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18D6C852937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cargohub_CDM_DriverUITests.swift; sourceTree = "<group>"; };
+		D18D6C872937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cargohub_CDM_DriverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D18D6C952937AECC00F1DDF2 /* PlannedTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTripsView.swift; sourceTree = "<group>"; };
+		D1B487AC2940FC46002A549B /* TripDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsView.swift; sourceTree = "<group>"; };
+		D1BCDE79294A2C9A002DBAD3 /* LoadOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrdersView.swift; sourceTree = "<group>"; };
+		D1BCDE7B294A2CDC002DBAD3 /* OrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStore.swift; sourceTree = "<group>"; };
+		D1BCDE7D294A2CFF002DBAD3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D1BCDE7F294A33C5002DBAD3 /* AllOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderResponse.swift; sourceTree = "<group>"; };
+		D1BCDE82294A3710002DBAD3 /* LoadOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D18D6C642937AE4A00F1DDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D143533E2937BEF50003BDFB /* SFSymbols in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D6C742937AE4B00F1DDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D6C7E2937AE4B00F1DDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D11F56C329438E7C00D65108 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D124DF572944C1570083A037 /* Entities */,
+				D124DF552944C1520083A037 /* CargoAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D124DF522944C1010083A037 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D124DF532944C12A0083A037 /* Trip.swift */,
+				D1BCDE7D294A2CFF002DBAD3 /* Order.swift */,
+				D10B1BFF296C474F005DB6AE /* Airwaybill.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D124DF572944C1570083A037 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D124DF5A2944C1B80083A037 /* AllTripsResponse.swift */,
+				D1BCDE7F294A33C5002DBAD3 /* AllOrderResponse.swift */,
+				D10B1C01296C48B4005DB6AE /* AllAirwaybillsResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D124DF5C2944CBC80083A037 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D124DF5D2944CBEC0083A037 /* TripStore.swift */,
+				D1BCDE7B294A2CDC002DBAD3 /* OrderStore.swift */,
+				D10B1BFC296C4705005DB6AE /* AirwaybillStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		D143533F2937C5080003BDFB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D14353402937C5330003BDFB /* Inter-Bold.otf */,
+				D14353422937C5330003BDFB /* Inter-Medium.otf */,
+				D14353412937C5330003BDFB /* Inter-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D15D331529478B9E00467435 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D15D331629478BAA00467435 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D18D6C5E2937AE4A00F1DDF2 = {
+			isa = PBXGroup;
+			children = (
+				D18D6C692937AE4A00F1DDF2 /* Cargohub_CDM_Driver */,
+				D18D6C7A2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests */,
+				D18D6C842937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests */,
+				D18D6C682937AE4A00F1DDF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D18D6C682937AE4A00F1DDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D18D6C672937AE4A00F1DDF2 /* Cargohub_CDM_Driver.app */,
+				D18D6C772937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.xctest */,
+				D18D6C812937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D18D6C692937AE4A00F1DDF2 /* Cargohub_CDM_Driver */ = {
+			isa = PBXGroup;
+			children = (
+				D14353462937C5620003BDFB /* Cargohub-CDM-Driver-Info.plist */,
+				D15D331529478B9E00467435 /* Helpers */,
+				D124DF5C2944CBC80083A037 /* Store */,
+				D11F56C329438E7C00D65108 /* API */,
+				D18D6C942937AEB700F1DDF2 /* Views */,
+				D124DF522944C1010083A037 /* Models */,
+				D18D6C6A2937AE4A00F1DDF2 /* Cargohub_CDM_DriverApp.swift */,
+				D18D6C6C2937AE4A00F1DDF2 /* ContentView.swift */,
+				D18D6C6E2937AE4B00F1DDF2 /* Assets.xcassets */,
+				D18D6C702937AE4B00F1DDF2 /* Preview Content */,
+				D143533F2937C5080003BDFB /* Fonts */,
+				D14353472937C5AB0003BDFB /* FontStyles.swift */,
+			);
+			path = Cargohub_CDM_Driver;
+			sourceTree = "<group>";
+		};
+		D18D6C702937AE4B00F1DDF2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D18D6C712937AE4B00F1DDF2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D18D6C7A2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests */ = {
+			isa = PBXGroup;
+			children = (
+				D18D6C7B2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.swift */,
+			);
+			path = Cargohub_CDM_DriverTests;
+			sourceTree = "<group>";
+		};
+		D18D6C842937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D18D6C852937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.swift */,
+				D18D6C872937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITestsLaunchTests.swift */,
+			);
+			path = Cargohub_CDM_DriverUITests;
+			sourceTree = "<group>";
+		};
+		D18D6C942937AEB700F1DDF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCDE81294A3703002DBAD3 /* Cells */,
+				D18D6C952937AECC00F1DDF2 /* PlannedTripsView.swift */,
+				D14353492937DCB30003BDFB /* ActiveTripsView.swift */,
+				D143534B2937DCC10003BDFB /* ClosedTripView.swift */,
+				D101A53329380D5D004A70F3 /* LoginView.swift */,
+				D101A53529381F52004A70F3 /* Buttons.swift */,
+				D101A53729382408004A70F3 /* ForgotPasswordView.swift */,
+				D1B487AC2940FC46002A549B /* TripDetailsView.swift */,
+				D1BCDE79294A2C9A002DBAD3 /* LoadOrdersView.swift */,
+				D1639CFF296F484600BAE14E /* DrivingView.swift */,
+				D1639D01296F498C00BAE14E /* UnloadOrdersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1BCDE81294A3703002DBAD3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCDE82294A3710002DBAD3 /* LoadOrderCell.swift */,
+				D10B1C03296C78EE005DB6AE /* LoadAirwaybillCell.swift */,
+				D1639D05296F4A3700BAE14E /* UnloadAirwaybillCell.swift */,
+				D1639D03296F4A2300BAE14E /* UnloadOrderCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D18D6C662937AE4A00F1DDF2 /* Cargohub_CDM_Driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18D6C8B2937AE4B00F1DDF2 /* Build configuration list for PBXNativeTarget "Cargohub_CDM_Driver" */;
+			buildPhases = (
+				D18D6C632937AE4A00F1DDF2 /* Sources */,
+				D18D6C642937AE4A00F1DDF2 /* Frameworks */,
+				D18D6C652937AE4A00F1DDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cargohub_CDM_Driver;
+			packageProductDependencies = (
+				D143533D2937BEF50003BDFB /* SFSymbols */,
+			);
+			productName = Cargohub_CDM_Driver;
+			productReference = D18D6C672937AE4A00F1DDF2 /* Cargohub_CDM_Driver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D18D6C762937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18D6C8E2937AE4B00F1DDF2 /* Build configuration list for PBXNativeTarget "Cargohub_CDM_DriverTests" */;
+			buildPhases = (
+				D18D6C732937AE4B00F1DDF2 /* Sources */,
+				D18D6C742937AE4B00F1DDF2 /* Frameworks */,
+				D18D6C752937AE4B00F1DDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D18D6C792937AE4B00F1DDF2 /* PBXTargetDependency */,
+			);
+			name = Cargohub_CDM_DriverTests;
+			productName = Cargohub_CDM_DriverTests;
+			productReference = D18D6C772937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D18D6C802937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18D6C912937AE4B00F1DDF2 /* Build configuration list for PBXNativeTarget "Cargohub_CDM_DriverUITests" */;
+			buildPhases = (
+				D18D6C7D2937AE4B00F1DDF2 /* Sources */,
+				D18D6C7E2937AE4B00F1DDF2 /* Frameworks */,
+				D18D6C7F2937AE4B00F1DDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D18D6C832937AE4B00F1DDF2 /* PBXTargetDependency */,
+			);
+			name = Cargohub_CDM_DriverUITests;
+			productName = Cargohub_CDM_DriverUITests;
+			productReference = D18D6C812937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D18D6C5F2937AE4A00F1DDF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					D18D6C662937AE4A00F1DDF2 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					D18D6C762937AE4B00F1DDF2 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D18D6C662937AE4A00F1DDF2;
+					};
+					D18D6C802937AE4B00F1DDF2 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D18D6C662937AE4A00F1DDF2;
+					};
+				};
+			};
+			buildConfigurationList = D18D6C622937AE4A00F1DDF2 /* Build configuration list for PBXProject "Cargohub_CDM_Driver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D18D6C5E2937AE4A00F1DDF2;
+			packageReferences = (
+				D143533C2937BEF50003BDFB /* XCRemoteSwiftPackageReference "SFSymbols" */,
+			);
+			productRefGroup = D18D6C682937AE4A00F1DDF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D18D6C662937AE4A00F1DDF2 /* Cargohub_CDM_Driver */,
+				D18D6C762937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests */,
+				D18D6C802937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D18D6C652937AE4A00F1DDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18D6C722937AE4B00F1DDF2 /* Preview Assets.xcassets in Resources */,
+				D18D6C6F2937AE4B00F1DDF2 /* Assets.xcassets in Resources */,
+				D14353432937C5330003BDFB /* Inter-Bold.otf in Resources */,
+				D14353452937C5330003BDFB /* Inter-Medium.otf in Resources */,
+				D14353442937C5330003BDFB /* Inter-SemiBold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D6C752937AE4B00F1DDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D6C7F2937AE4B00F1DDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D18D6C632937AE4A00F1DDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1639D06296F4A3700BAE14E /* UnloadAirwaybillCell.swift in Sources */,
+				D124DF542944C12A0083A037 /* Trip.swift in Sources */,
+				D143534A2937DCB30003BDFB /* ActiveTripsView.swift in Sources */,
+				D1BCDE83294A3710002DBAD3 /* LoadOrderCell.swift in Sources */,
+				D101A53429380D5D004A70F3 /* LoginView.swift in Sources */,
+				D124DF5B2944C1B80083A037 /* AllTripsResponse.swift in Sources */,
+				D18D6C6D2937AE4A00F1DDF2 /* ContentView.swift in Sources */,
+				D1639D00296F484600BAE14E /* DrivingView.swift in Sources */,
+				D10B1BFD296C4705005DB6AE /* AirwaybillStore.swift in Sources */,
+				D18D6C6B2937AE4A00F1DDF2 /* Cargohub_CDM_DriverApp.swift in Sources */,
+				D14353482937C5AB0003BDFB /* FontStyles.swift in Sources */,
+				D18D6C962937AECC00F1DDF2 /* PlannedTripsView.swift in Sources */,
+				D143534C2937DCC10003BDFB /* ClosedTripView.swift in Sources */,
+				D10B1C02296C48B4005DB6AE /* AllAirwaybillsResponse.swift in Sources */,
+				D1BCDE7C294A2CDC002DBAD3 /* OrderStore.swift in Sources */,
+				D1BCDE7A294A2C9A002DBAD3 /* LoadOrdersView.swift in Sources */,
+				D101A53829382408004A70F3 /* ForgotPasswordView.swift in Sources */,
+				D1639D02296F498C00BAE14E /* UnloadOrdersView.swift in Sources */,
+				D1BCDE7E294A2CFF002DBAD3 /* Order.swift in Sources */,
+				D124DF5E2944CBEC0083A037 /* TripStore.swift in Sources */,
+				D1B487AD2940FC47002A549B /* TripDetailsView.swift in Sources */,
+				D10B1C00296C474F005DB6AE /* Airwaybill.swift in Sources */,
+				D1639D04296F4A2300BAE14E /* UnloadOrderCell.swift in Sources */,
+				D124DF562944C1520083A037 /* CargoAPI.swift in Sources */,
+				D1BCDE80294A33C5002DBAD3 /* AllOrderResponse.swift in Sources */,
+				D15D331729478BAA00467435 /* Helpers.swift in Sources */,
+				D101A53629381F52004A70F3 /* Buttons.swift in Sources */,
+				D10B1C04296C78EE005DB6AE /* LoadAirwaybillCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D6C732937AE4B00F1DDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18D6C7C2937AE4B00F1DDF2 /* Cargohub_CDM_DriverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18D6C7D2937AE4B00F1DDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18D6C882937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITestsLaunchTests.swift in Sources */,
+				D18D6C862937AE4B00F1DDF2 /* Cargohub_CDM_DriverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D18D6C792937AE4B00F1DDF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D18D6C662937AE4A00F1DDF2 /* Cargohub_CDM_Driver */;
+			targetProxy = D18D6C782937AE4B00F1DDF2 /* PBXContainerItemProxy */;
+		};
+		D18D6C832937AE4B00F1DDF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D18D6C662937AE4A00F1DDF2 /* Cargohub_CDM_Driver */;
+			targetProxy = D18D6C822937AE4B00F1DDF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D18D6C892937AE4B00F1DDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D18D6C8A2937AE4B00F1DDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D18D6C8C2937AE4B00F1DDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cargohub_CDM_Driver/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cargohub-CDM-Driver-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.barelds.youri.Cargohub-CDM-Driver";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D18D6C8D2937AE4B00F1DDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cargohub_CDM_Driver/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cargohub-CDM-Driver-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.barelds.youri.Cargohub-CDM-Driver";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D18D6C8F2937AE4B00F1DDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.barelds.youri.Cargohub-CDM-DriverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cargohub_CDM_Driver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cargohub_CDM_Driver";
+			};
+			name = Debug;
+		};
+		D18D6C902937AE4B00F1DDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.barelds.youri.Cargohub-CDM-DriverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cargohub_CDM_Driver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cargohub_CDM_Driver";
+			};
+			name = Release;
+		};
+		D18D6C922937AE4B00F1DDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.barelds.youri.Cargohub-CDM-DriverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cargohub_CDM_Driver;
+			};
+			name = Debug;
+		};
+		D18D6C932937AE4B00F1DDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.barelds.youri.Cargohub-CDM-DriverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cargohub_CDM_Driver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D18D6C622937AE4A00F1DDF2 /* Build configuration list for PBXProject "Cargohub_CDM_Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18D6C892937AE4B00F1DDF2 /* Debug */,
+				D18D6C8A2937AE4B00F1DDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18D6C8B2937AE4B00F1DDF2 /* Build configuration list for PBXNativeTarget "Cargohub_CDM_Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18D6C8C2937AE4B00F1DDF2 /* Debug */,
+				D18D6C8D2937AE4B00F1DDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18D6C8E2937AE4B00F1DDF2 /* Build configuration list for PBXNativeTarget "Cargohub_CDM_DriverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18D6C8F2937AE4B00F1DDF2 /* Debug */,
+				D18D6C902937AE4B00F1DDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18D6C912937AE4B00F1DDF2 /* Build configuration list for PBXNativeTarget "Cargohub_CDM_DriverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18D6C922937AE4B00F1DDF2 /* Debug */,
+				D18D6C932937AE4B00F1DDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D143533C2937BEF50003BDFB /* XCRemoteSwiftPackageReference "SFSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WikipediaBrown/SFSymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D143533D2937BEF50003BDFB /* SFSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D143533C2937BEF50003BDFB /* XCRemoteSwiftPackageReference "SFSymbols" */;
+			productName = SFSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D18D6C5F2937AE4A00F1DDF2 /* Project object */;
+}

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sfsymbols",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/WikipediaBrown/SFSymbols.git",
+      "state" : {
+        "revision" : "cdb1d644f9f61aa796da75984bd9fe121d2f39bc",
+        "version" : "0.1.3"
+      }
+    }
+  ],
+  "version" : 2
+}
